@@ -50,6 +50,10 @@ export default function NavbarLinks() {
           </Link>
         </MenubarContent>
       </MenubarMenu>
+      {/* Reports */}
+      <Link href="/reports" className="flex items-center rounded-lg px-3 py-1 text-sm font-medium hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-500 dark:hover:text-blue-400 transition-all">
+        Reports
+      </Link>
       {/* Contact */}
       <Link href="/contact" className="flex items-center rounded-lg px-3 py-1 text-sm font-medium hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-500 dark:hover:text-blue-400 transition-all">
         Contact

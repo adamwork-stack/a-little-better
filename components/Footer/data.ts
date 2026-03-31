@@ -11,6 +11,10 @@ export const data = [
         href: "/blog"
       },
       {
+        name: "Reports",
+        href: "/reports"
+      },
+      {
         name: "Contact",
         href: "/contact"
       }

@@ -2,6 +2,10 @@ import Logo from "../Logo/Logo";
 import NavbarCTA from "./NavbarCTA";
 import NavbarLinks from "./NavbarLinks";
 import ThemeToggle from "../Theme/ThemeToggle";
+import Link from "next/link";
+
+const mobileLinkClass =
+  "text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors";
 
 export default function Navbar() {
   return (
@@ -20,6 +24,17 @@ export default function Navbar() {
               <NavbarCTA />
             </div>
           </nav>
+          <div className="sm:hidden border-t border-neutral-200 dark:border-neutral-800 px-6 py-3 flex flex-wrap justify-center gap-x-5 gap-y-2">
+            <Link href="/reports" className={mobileLinkClass}>
+              Reports
+            </Link>
+            <Link href="/blog" className={mobileLinkClass}>
+              Blog
+            </Link>
+            <Link href="/contact" className={mobileLinkClass}>
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </div>

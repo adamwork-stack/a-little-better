@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Chatbot from "@/components/Chatbot/Chatbot";
 import DisableDevTools from "@/components/Protection/DisableDevTools";
 import MouseGasEffect from "@/components/Effects/MouseGasEffect";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Chatbot />
+        <Analytics />
       </body>
     </html>
   );

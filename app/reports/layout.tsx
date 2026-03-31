@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Daily Reports | A Little Better",
+  title: "Reports | A Little Better",
   description:
-    "View the Kron daily business development report template and submit your completed report.",
+    "Download report templates and submit your completed daily business development report.",
 };
 
 export default function ReportsLayout({
